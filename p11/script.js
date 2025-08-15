@@ -39,6 +39,9 @@
 //     }
 // })
 
+
+// Optimized Version from GPT
+
 const body = document.body;
 const btn = document.querySelector("button");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
