@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    padding: 40px;
+}
+
+.li {
+    text-decoration: line-through;
+    color: red;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    #main {
+        height: 100%;
+        width: 100%;
+        background-color: #272525;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #box {
+        height: 18%;
+        width: 20%;
+        background-color: rgb(38, 38, 88);
+        border: 1px solid #000;
+        border-radius: 20px;
+        box-shadow: rgb(45, 87, 131) 10px 20px 40px -10px;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; */
+        padding: 8px 10px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #progressbar {
+        height: 10%;
+        width: 0%;
+        background-color: aliceblue;
+        border-radius: 14px;
+        margin: 25px 0 25px 0  ;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="box">
+            <h2>Downloading....</h2>
+            <div id="progressbar"></div>
+            <h4>0%</h4>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

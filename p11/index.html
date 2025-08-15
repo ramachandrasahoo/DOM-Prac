@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --bg-light: #ffffff;
+            --text-light: #1a1a1a;
+
+            --bg-dark: #1e1e1e;
+            --text-dark: #f5f5f5;
+        }
+        body.light {
+            background-color: var(--bg-light);
+            color: var(--text-light);
+        }
+        body.dark {
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            transition:
+                background-color 0.3s ease,
+                color 0.3s ease;
+        }
+        #container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #toggleTheme {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #676060;
+            font-size: 18px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Theme Preference</h1>
+        <button id="toggleTheme">Toggle Theme</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
