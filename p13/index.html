@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Main-Project</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- form -->
+        <form class="formCard">
+            <h2>New Call</h2>
+            <label>Image URL</label>
+            <input autocomplete="off" required type="text" name="imgUrl" placeholder="https://example.com/photo.jpg">
+
+            <label>Full Name</label>
+            <input autocomplete="off" required type="text" name="fullname"  placeholder="Enter full name">
+
+            <label>Home Town</label>
+            <input autocomplete="off" required type="text" name="hometown" placeholder="Enter home town">
+
+            <label>Purpose</label>
+            <input autocomplete="off" required type="text" name="purpose" placeholder="e.g., Quick appointment note">
+
+            <label>Category</label>
+            <div class="category">
+                <label class="chip emergency"><input required type="radio" name="typeofcategory" value="emergency">
+                    Emergency</label>
+                <label class="chip important"><input required type="radio" name="typeofcategory" value="important">
+                    Important</label>
+                <label class="chip urgent"><input required type="radio" name="typeofcategory" value="urgent"> Urgent</label>
+                <label class="chip norush"><input required type="radio" name="typeofcategory" value="norush"> No Rush</label>
+            </div>
+
+            <div class="press">
+                <button type="submit" class="prs open">Create Note</button>
+                <button type="button" class="prs shut">Close</button>
+            </div>
+        </form>
+
+        <!-- profile card -->
+        <div class="show-card">
+            <!-- Side controls -->
+            <div class="side-controls">
+                <div class="circle-btn plus">+</div>
+                <div class="circle-btn up">↑</div>
+                <div class="circle-btn down">↓</div>
+            </div>
+
+            <!--card stack-->
+            <div class="card-self">
+                <!-- <div class="card">
+                    <div class="profile">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile">
+                        <h2>Fatima Uma</h2>
+                    </div>
+                    <div class="info hometown">
+                        <span>Home town</span>
+                        <span>Singapore</span>
+                    </div>
+                    <div class="info booking">
+                        <span>Bookings</span>
+                        <span>3 times</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn call">Call</button>
+                        <button class="btn message">Message</button>
+                    </div>
+                </div> -->
+                <!-- <div class="card">
+                </div>
+                <div class="card">
+                </div> -->
+            </div>
+
+            <!-- Color dots -->
+            <div class="colors">
+                <div class="color-dot black"></div>
+                <div class="color-dot purple"></div>
+                <div class="color-dot orange"></div>
+                <div class="color-dot teal"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

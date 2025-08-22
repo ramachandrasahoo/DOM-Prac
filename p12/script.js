@@ -81,6 +81,13 @@ showUsers(users);
 inp.addEventListener("input", function () {
     let search = inp.value.trim().toLowerCase()
     let filtered = users.filter((user)=>user.name.toLowerCase().includes(search));
-
-    showUsers(filtered);
+    
+    if(filtered.length === 0) {
+        main.innerHTML = "";
+        let nouser = createEl("div", "no-user", "no user found");
+        main.appendChild(nouser);
+    }
+    else{
+        showUsers(filtered);
+    }
 });

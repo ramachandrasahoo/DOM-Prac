@@ -63,3 +63,12 @@ body {
     color: #ddd;
     line-height: 1.4;
 }
+
+.no-user {
+    text-align: center;
+    font-size: 2rem;
+    color: #555;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10; /* keeps it above blurred-layer */
+}

@@ -1,0 +1,15 @@
+// new cards create karna hai , data local storage mai save karna hai 
+// local storage se hi cards show karna hai 
+// buttons ko handle karna hai 
+// filters ko handle karna hai 
+
+
+// + button ko select karna hai taki form open ho & close pe click karne se form close ho > >>>  complete
+// sare card pe validation lagani hai taki jab create pai click ho to sab input field fill up hona chahiye
+// form submit se pehele sara field fill hona chhiye 
+
+//  ek function banan hai jo form ke data ko local storage main save kare 
+// sabse pehele check karna hai ki local storage main koi data hai ki nahi , agar nahi hai to new data add carna hai agar hai to bhi new data ko push karna hai 
+// jab form submit hojaye to form ko khali karna hai aur form ko display se hatana hai 
+
+
